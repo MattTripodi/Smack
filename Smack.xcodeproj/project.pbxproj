@@ -15,6 +15,7 @@
 		EEBA21551F4B559700F390D4 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA21541F4B559700F390D4 /* ChatVC.swift */; };
 		EEBA21571F4B55A900F390D4 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA21561F4B55A900F390D4 /* ChannelVC.swift */; };
 		EEBA21581F4B57EC00F390D4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA214F1F47BB0700F390D4 /* SWRevealViewController.m */; };
+		EEBA215A1F4B5AAE00F390D4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA21591F4B5AAE00F390D4 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EEBA21501F47BB0700F390D4 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SmackAssets/SWReveal/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
 		EEBA21541F4B559700F390D4 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		EEBA21561F4B55A900F390D4 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		EEBA21591F4B5AAE00F390D4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		EEBA21521F4B556300F390D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EEBA21591F4B5AAE00F390D4 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				EEBA21551F4B559700F390D4 /* ChatVC.swift in Sources */,
 				EEBA21571F4B55A900F390D4 /* ChannelVC.swift in Sources */,
+				EEBA215A1F4B5AAE00F390D4 /* GradientView.swift in Sources */,
 				EEBA213C1F47B24900F390D4 /* AppDelegate.swift in Sources */,
 				EEBA21581F4B57EC00F390D4 /* SWRevealViewController.m in Sources */,
 			);
