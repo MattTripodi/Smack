@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		934AE076CC0CA104BBD73A68 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BD51B81508E66E40C6419 /* Pods_Smack.framework */; };
+		EE6959781F4DCF86001D30A2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6959771F4DCF86001D30A2 /* AuthService.swift */; };
 		EEBA213C1F47B24900F390D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA213B1F47B24900F390D4 /* AppDelegate.swift */; };
 		EEBA21411F47B24900F390D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBA213F1F47B24900F390D4 /* Main.storyboard */; };
 		EEBA21431F47B24900F390D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBA21421F47B24900F390D4 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		508BD51B81508E66E40C6419 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D3131E3D90FCC90A778986 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		D53ACD6BFD820ECA7B5240F5 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
+		EE6959771F4DCF86001D30A2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EEBA21381F47B24900F390D4 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBA213B1F47B24900F390D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEBA21401F47B24900F390D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EE6959761F4DCF55001D30A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE6959771F4DCF86001D30A2 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EEBA212F1F47B24900F390D4 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		EEBA213A1F47B24900F390D4 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				EE6959761F4DCF55001D30A2 /* Services */,
 				EEBA215B1F4B7B2E00F390D4 /* Utilities */,
 				EEBA21531F4B556900F390D4 /* Model */,
 				EEBA21521F4B556300F390D4 /* View */,
@@ -276,6 +287,7 @@
 				EEBA21551F4B559700F390D4 /* ChatVC.swift in Sources */,
 				EEBA21571F4B55A900F390D4 /* ChannelVC.swift in Sources */,
 				EEBA21611F4B8CB400F390D4 /* CreateAccountVC.swift in Sources */,
+				EE6959781F4DCF86001D30A2 /* AuthService.swift in Sources */,
 				EEBA215F1F4B7F0400F390D4 /* LoginVC.swift in Sources */,
 				EEBA215A1F4B5AAE00F390D4 /* GradientView.swift in Sources */,
 				EEBA213C1F47B24900F390D4 /* AppDelegate.swift in Sources */,
