@@ -28,6 +28,12 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 		setupUserInfo()
 	}
 	
+	@IBAction func addChannelPressed(_ sender: Any) {
+		let addChannel = AddChannelVC()
+		addChannel.modalPresentationStyle = .custom
+		present(addChannel, animated: true, completion: nil)
+	}
+	
 	@IBAction func loginBtnPressed(_ sender: Any) {
 		if AuthService.instance.isLoggedIn {
 			// Show profile page
@@ -72,6 +78,8 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return MessageService.instance.channels.count
 	}
+	
+	
 
 }
 
