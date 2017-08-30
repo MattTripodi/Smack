@@ -18,6 +18,7 @@
 		EE972B191F55E17900737466 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE972B181F55E17900737466 /* ChannelCell.swift */; };
 		EE972B1C1F55E6B400737466 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE972B1A1F55E6B400737466 /* AddChannelVC.swift */; };
 		EE972B1D1F55E6B400737466 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE972B1B1F55E6B400737466 /* AddChannelVC.xib */; };
+		EE972B1F1F563A6100737466 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE972B1E1F563A6100737466 /* SocketService.swift */; };
 		EE9D9D241F54F4FA00264699 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D9D231F54F4FA00264699 /* CircleImage.swift */; };
 		EE9D9D271F552ABF00264699 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D9D251F552ABF00264699 /* ProfileVC.swift */; };
 		EE9D9D281F552ABF00264699 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE9D9D261F552ABF00264699 /* ProfileVC.xib */; };
@@ -48,6 +49,7 @@
 		EE972B181F55E17900737466 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		EE972B1A1F55E6B400737466 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		EE972B1B1F55E6B400737466 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		EE972B1E1F563A6100737466 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		EE9D9D231F54F4FA00264699 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		EE9D9D251F552ABF00264699 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		EE9D9D261F552ABF00264699 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				EE6959771F4DCF86001D30A2 /* AuthService.swift */,
 				EE4D2F271F54B69A00849F47 /* UserDataService.swift */,
 				EE972B141F55DC0B00737466 /* MessageService.swift */,
+				EE972B1E1F563A6100737466 /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE972B1F1F563A6100737466 /* SocketService.swift in Sources */,
 				EE9D9D271F552ABF00264699 /* ProfileVC.swift in Sources */,
 				EE972B191F55E17900737466 /* ChannelCell.swift in Sources */,
 				EEBA21551F4B559700F390D4 /* ChatVC.swift in Sources */,
