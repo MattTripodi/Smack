@@ -76,20 +76,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
 	@IBAction func backPressed(_ sender: Any) {
 		dismiss(animated: true, completion: nil)
 	}
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

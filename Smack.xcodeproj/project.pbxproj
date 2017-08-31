@@ -182,8 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				EEBA21591F4B5AAE00F390D4 /* GradientView.swift */,
-				EE4D2F2B1F54C24B00849F47 /* AvatarCell.swift */,
 				EE4D2F251F548FE000849F47 /* RoundedButton.swift */,
+				EE4D2F2B1F54C24B00849F47 /* AvatarCell.swift */,
 				EE9D9D231F54F4FA00264699 /* CircleImage.swift */,
 				EE972B181F55E17900737466 /* ChannelCell.swift */,
 				EE4E89231F586246003E1AD3 /* KeyboardBoundView.swift */,
