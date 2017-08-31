@@ -13,6 +13,7 @@
 		EE4D2F281F54B69A00849F47 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4D2F271F54B69A00849F47 /* UserDataService.swift */; };
 		EE4D2F2A1F54C10800849F47 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4D2F291F54C10800849F47 /* AvatarPickerVC.swift */; };
 		EE4D2F2C1F54C24B00849F47 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4D2F2B1F54C24B00849F47 /* AvatarCell.swift */; };
+		EE4E89241F586246003E1AD3 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E89231F586246003E1AD3 /* KeyboardBoundView.swift */; };
 		EE6959781F4DCF86001D30A2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6959771F4DCF86001D30A2 /* AuthService.swift */; };
 		EE972B151F55DC0B00737466 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE972B141F55DC0B00737466 /* MessageService.swift */; };
 		EE972B171F55DC3900737466 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE972B161F55DC3900737466 /* Channel.swift */; };
@@ -45,6 +46,7 @@
 		EE4D2F271F54B69A00849F47 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		EE4D2F291F54C10800849F47 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		EE4D2F2B1F54C24B00849F47 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		EE4E89231F586246003E1AD3 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyboardBoundView.swift; path = "SmackAssets/KeyboardBind View/KeyboardBoundView.swift"; sourceTree = SOURCE_ROOT; };
 		EE6959771F4DCF86001D30A2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EE972B141F55DC0B00737466 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		EE972B161F55DC3900737466 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				EE4D2F251F548FE000849F47 /* RoundedButton.swift */,
 				EE9D9D231F54F4FA00264699 /* CircleImage.swift */,
 				EE972B181F55E17900737466 /* ChannelCell.swift */,
+				EE4E89231F586246003E1AD3 /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE4E89241F586246003E1AD3 /* KeyboardBoundView.swift in Sources */,
 				EE972B1F1F563A6100737466 /* SocketService.swift in Sources */,
 				EE9D9D271F552ABF00264699 /* ProfileVC.swift in Sources */,
 				EE972B191F55E17900737466 /* ChannelCell.swift in Sources */,
