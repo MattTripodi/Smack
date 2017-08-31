@@ -16,10 +16,10 @@ class MessageCell: UITableViewCell {
 	@IBOutlet weak var timeStampLbl: UILabel!
 	@IBOutlet weak var messageBodyLbl: UILabel!
 	
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
+	override func awakeFromNib() {
+		super.awakeFromNib()
+	}
+	
 	func configureCell(message: Message) {
 		messageBodyLbl.text = message.message
 		userNameLbl.text = message.userName
@@ -30,14 +30,14 @@ class MessageCell: UITableViewCell {
 		let end = isoDate.index(isoDate.endIndex, offsetBy: -5)
 		isoDate = isoDate.substring(to: end)
 		
-		let isoFormmater = ISO8601DateFormatter()
-		let chatDate = isoFormmater.date(from: isoDate.appending("Z"))
+		let isoFormatter = ISO8601DateFormatter()
+		let chatDate = isoFormatter.date(from: isoDate.appending("Z"))
 		
-		let newFormmater = DateFormatter()
-		newFormmater.dateFormat = "MMM d, h:mm a"
+		let newFormatter = DateFormatter()
+		newFormatter.dateFormat = "MMM d, h:mm a"
 		
 		if let finalDate = chatDate {
-			let finalDate = newFormmater.string(from: finalDate)
+			let finalDate = newFormatter.string(from: finalDate)
 			timeStampLbl.text = finalDate
 		}
 	}

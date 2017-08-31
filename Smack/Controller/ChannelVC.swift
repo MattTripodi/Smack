@@ -16,8 +16,8 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	@IBOutlet weak var tableView: UITableView!
 	@IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		tableView.delegate = self
 		tableView.dataSource = self
 		self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
@@ -36,8 +36,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 				self.tableView.reloadData()
 			}
 		}
-		
-    }
+	}
 	
 	override func viewDidAppear(_ animated: Bool) {
 		setupUserInfo()
@@ -53,7 +52,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
 	@IBAction func loginBtnPressed(_ sender: Any) {
 		if AuthService.instance.isLoggedIn {
-			// Show profile page
 			let profile = ProfileVC()
 			profile.modalPresentationStyle = .custom
 			present(profile, animated: true, completion: nil)
@@ -72,7 +70,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
 	func setupUserInfo() {
 		if AuthService.instance.isLoggedIn {
-			loginBtn.setTitle("\(UserDataService.instance.name)", for: .normal)
+			loginBtn.setTitle(UserDataService.instance.name, for: .normal)
 			userImg.image = UIImage(named: UserDataService.instance.avatarName)
 			userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
 		} else {
@@ -106,7 +104,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 		MessageService.instance.selectedChannel = channel
 		
 		if MessageService.instance.unreadChannels.count > 0 {
-			MessageService.instance.unreadChannels = MessageService.instance.unreadChannels.filter({$0 != channel.id})
+			MessageService.instance.unreadChannels = MessageService.instance.unreadChannels.filter{$0 != channel.id}
 		}
 		let index = IndexPath(row: indexPath.row, section: 0)
 		tableView.reloadRows(at: [index], with: .none)

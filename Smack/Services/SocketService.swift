@@ -17,7 +17,7 @@ class SocketService: NSObject {
 		super.init()
 	}
 	
-	var socket: SocketIOClient = SocketIOClient(socketURL: URL(string: BASE_URL)!)
+	var socket : SocketIOClient = SocketIOClient(socketURL: URL(string: BASE_URL)!)
 	
 	func establishConnection() {
 		socket.connect()
@@ -63,15 +63,13 @@ class SocketService: NSObject {
 			let newMessage = Message(message: msgBody, userName: userName, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
 			
 			completion(newMessage)
-	
 		}
 	}
 	
 	func getTypingUsers(_ completionHandler: @escaping (_ typingUsers: [String: String]) -> Void) {
-		
 		socket.on("userTypingUpdate") { (dataArray, ack) in
 			guard let typingUsers = dataArray[0] as? [String: String] else { return }
 			completionHandler(typingUsers)
 		}
-	}
+	}  
 }

@@ -19,10 +19,11 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	@IBOutlet weak var typingUsersLbl: UILabel!
 	
 	// Variables
+	// Variables
 	var isTyping = false
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		view.bindToKeyboard()
 		tableView.delegate = self
 		tableView.dataSource = self
@@ -83,7 +84,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 				NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
 			})
 		}
-    }
+	}
 	
 	@objc func userDataDidChange(_ notif: Notification) {
 		if AuthService.instance.isLoggedIn {
@@ -139,21 +140,21 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	}
 	
 	func onLoginGetMessages() {
-		MessageService.instance.findAllChannels { (success) in
+		MessageService.instance.findAllChannel { (success) in
 			if success {
 				if MessageService.instance.channels.count > 0 {
 					MessageService.instance.selectedChannel = MessageService.instance.channels[0]
 					self.updateWithChannel()
+				} else {
+					self.channelNameLbl.text = "No channels yet!"
 				}
-			} else {
-				self.channelNameLbl.text = "No channels yet!"
 			}
 		}
 	}
 	
 	func getMessages() {
 		guard let channelId = MessageService.instance.selectedChannel?.id else { return }
-		MessageService.instance.findAllMessagesForChannel(channelId: channelId) { (success) in
+		MessageService.instance.findAllMessageForChannel(channelId: channelId) { (success) in
 			if success {
 				self.tableView.reloadData()
 			}
