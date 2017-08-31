@@ -47,6 +47,11 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 			let addChannel = AddChannelVC()
 			addChannel.modalPresentationStyle = .custom
 			present(addChannel, animated: true, completion: nil)
+		} else {
+			let alertController = UIAlertController(title: "You are not logged in!", message: "To create a channel you need to login into your account.", preferredStyle: UIAlertControllerStyle.alert)
+			alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+			self.present(alertController, animated: true, completion: nil)
+			
 		}
 	}
 	
